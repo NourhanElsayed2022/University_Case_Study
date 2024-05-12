@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="603.0" prefWidth="891.0" style="-fx-background-color: #ffffff;" stylesheets="@tableViewStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="university.report.ReportController">
+   <children>
+      <TableView fx:id="reportTable" layoutX="14.0" layoutY="90.0" prefHeight="455.0" prefWidth="589.0">
+        <columns>
+          <TableColumn fx:id="codeCol" prefWidth="97.0" text="Course Code" />
+          <TableColumn fx:id="courseNameCol" prefWidth="114.0" text="Course Name" />
+            <TableColumn fx:id="studentCol" prefWidth="154.0" text="Enrolled Student" />
+            <TableColumn fx:id="StudentGradeCol" prefWidth="103.0" text="Student Grade" />
+            <TableColumn fx:id="courseAvgCol" prefWidth="120.0" text="Course Avg GPA" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchField" layoutX="78.0" layoutY="36.0" prefHeight="25.0" prefWidth="170.0" promptText="Enter course for search..." style="-fx-background-color: transparent; -fx-border-color: #750B53; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button fx:id="searchBttn" layoutX="312.0" layoutY="34.0" mnemonicParsing="false" onAction="#handleSearchBttn" text="Search" />
+   </children>
+</AnchorPane>

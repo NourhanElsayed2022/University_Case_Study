@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="departmentPane" prefHeight="603.0" prefWidth="891.0" style="-fx-background-color: #ffffff;" stylesheets="@../students/ButtonStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="university.departments.DepartmentController">
+   <children>
+      <TextField fx:id="departmentIdField" layoutX="167.0" layoutY="177.0" prefWidth="200.0" promptText="Enter department ID....." style="-fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent; -fx-border-color: #750B53;" />
+      <TextField fx:id="departmentNameField" layoutX="167.0" layoutY="238.0" prefWidth="200.0" promptText="Enter department name..." style="-fx-background-color: transparent; -fx-border-color: #750B53; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="supercisorIdField" layoutX="167.0" layoutY="308.0" prefWidth="200.0" promptText="Enter supervisor ID..." style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #750B53;" />
+      <Label layoutX="10.0" layoutY="182.0" text="Department_ID : ">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="242.0" text="Dept_Name :">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="312.0" text="Supervisor_ID :">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="addDeptBttn" layoutX="423.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleAddDept" text="Add Department">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="removeDeptBttn" layoutX="414.0" layoutY="162.0" mnemonicParsing="false" onAction="#handleRemoveDept" text="Remove Department">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="displayDeptBttn" layoutX="422.0" layoutY="298.0" mnemonicParsing="false" onAction="#handleDisplayDept" text="Display Department">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="clearBttn" layoutX="457.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleClearBttn" text="Clear">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="updateDeptBttn" layoutX="426.0" layoutY="365.0" mnemonicParsing="false" onAction="#handleUpdateDept" text="Update Department">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="addCourseBttn" layoutX="260.0" layoutY="471.0" mnemonicParsing="false" onAction="#handleAddCourses" text="Add Courses">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="dataAlert" layoutX="195.0" layoutY="441.0" text="        " textFill="RED" />
+   </children>
+</AnchorPane>

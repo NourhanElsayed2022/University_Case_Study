@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: #ffffff;" stylesheets="@../students/ButtonStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="university.prof_courses.Prof_courseController">
+   <children>
+      <TextField fx:id="profIdfield" layoutX="222.0" layoutY="87.0" prefWidth="200.0" promptText="Enter professor ID....." style="-fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent; -fx-border-color: #750B53;" />
+      <TextField fx:id="courseIdField" layoutX="222.0" layoutY="128.0" prefWidth="200.0" promptText="Enter course ID..." style="-fx-background-color: transparent; -fx-border-color: #750B53; -fx-border-width: 0px 0px 2px 0px;" />
+      <Label layoutX="65.0" layoutY="92.0" text="Professor_ID : ">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="132.0" text="Course_ID : ">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="assignCourseBttn" layoutX="191.0" layoutY="202.0" mnemonicParsing="false" onAction="#handleAssignCourse" text="Assign Course">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="dataAlert" layoutX="163.0" layoutY="175.0" text="      " textFill="RED" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,4 @@
+FILE="C:\Users\Software\Desktop\caseStudy\university schema\university.DMP"
+LOG="C:\Users\Software\Desktop\caseStudy\university schema\exp_university.log"
+OWNER=('UNIVERSITY')
+FEEDBACK=1000

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="coursePane" prefHeight="603.0" prefWidth="891.0" style="-fx-background-color: #ffffff;" stylesheets="@../students/ButtonStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="university.courses.CourseController">
+   <children>
+      <TextField fx:id="courseIdField" layoutX="171.0" layoutY="151.0" prefWidth="200.0" promptText="Enter course ID....." style="-fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent; -fx-border-color: #750B53;" />
+      <TextField fx:id="courseNameField" layoutX="171.0" layoutY="192.0" prefWidth="200.0" promptText="Enter course name..." style="-fx-background-color: transparent; -fx-border-color: #750B53; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="CourseDescribtionField" layoutX="171.0" layoutY="236.0" prefWidth="200.0" promptText="Enter course description..." style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #750B53;" />
+      <TextField fx:id="CourseCodeField" layoutX="171.0" layoutY="280.0" prefWidth="200.0" promptText="Enter course code..." style="-fx-border-color: #750B53; -fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="creditHoursField" layoutX="171.0" layoutY="325.0" prefWidth="200.0" promptText="Enter course credit hours..." style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #750B53;" />
+      <TextField fx:id="semesterField" layoutX="171.0" layoutY="370.0" prefWidth="200.0" promptText="Enter course semester..." style="-fx-border-color: #750B53; -fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px;" />
+      <Label layoutX="14.0" layoutY="156.0" text="Course_ID : ">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="196.0" text="Course_Name :">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="240.0" text="Describtion : ">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="284.0" text="Code : ">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="329.0" text="Credit_Hours :">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="374.0" text="Semester :  ">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="addCourseBttn" layoutX="472.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleAddCourse" text="Add Course">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="removeCourseBttn" layoutX="463.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleRemoveCourse" text="Remove Course">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="displayCourseBttn" layoutX="471.0" layoutY="321.0" mnemonicParsing="false" onAction="#handleDisplayCourse" text="Display Course">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="clearBttn" layoutX="506.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleClearBttn" text="Clear">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="updateCourseBtn" layoutX="475.0" layoutY="388.0" mnemonicParsing="false" onAction="#handleUpdateCourse" text="Update Course">
+         <font>
+            <Font name="Bodoni MT Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="dataAlert" layoutX="168.0" layoutY="454.0" text="          " textFill="RED" />
+   </children>
+</AnchorPane>

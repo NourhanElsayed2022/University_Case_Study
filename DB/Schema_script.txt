@@ -1,0 +1,75 @@
+-- create table Professors (pro_id number(4) ,
+--    f_name varchar2(50),
+--    l_name varchar2(50),
+--    phone varchar2(20),
+--    salary number(6,2),
+--    email varchar2(100),
+--    constraint prof_pk 
+--    primary key (pro_id)
+--    );   
+--    ---------------------------------------------------------------
+--     create table Departments (dept_id varchar2(4) ,
+--    dept_name varchar2(50),
+--    supervisor_id number(4),
+--     constraint dept_pk 
+--    primary key (dept_id),
+--    constraint dept_fk
+--     foreign key (supervisor_id) references Professors(pro_id)
+--    );   
+  --  ------------------------------------------------------------------
+--  create table Students (student_id number(4) ,
+--    f_name varchar2(50),
+--    l_name varchar2(50),
+--    DOF date,
+--    phone varchar2(20),
+--    email varchar2(100),
+--    dept_id varchar2(4),
+--    GPA number(4,2),
+--    constraint student_pk 
+--    primary key (student_id),
+--     constraint  studentt_fk
+--    foreign key (dept_id) references Departments(dept_id));
+
+-- ------------------------------------------------------------------------
+
+--   create table Courses (course_id number(4) ,
+--    name varchar2(100),
+--    description varchar2(200),
+--    code varchar2(20),
+--    credit_hours number(4,2),
+--    semester varchar2(20),
+--    constraint couse_pk
+--    primary key(course_id) );   
+    
+ -- -------------------------------------------
+--    create table dept_courses ( dept_id varchar2(4),
+--    course_id number(4),
+--    constraint d_courses_pk
+--    primary key (dept_id, course_id),
+--    constraint d_courses_fk
+--    foreign key  (dept_id) references Departments(dept_id),
+--    constraint d_courses_fk2
+--    foreign key  (course_id) references Courses(course_id));
+
+--- --------------------------------------------------------------
+--  create table Enrollment( student_id number(4) ,
+--    course_id number(4) ,
+--    grade varchar2(3),
+--    enrollment_date  date,
+--    constraint enrol_fk
+--    foreign key  (course_id) references Courses(course_id),
+--    constraint enrol_fk2
+--    foreign key  (student_id) references Students(student_id)
+--    );
+
+-- -------------------------------------------------------------------
+   create table professor_courses ( pro_id number(4),
+    course_id number(4),
+    constraint p_courses_pk
+    primary key (pro_id, course_id),
+    constraint p_courses_fk
+    foreign key  (pro_id) references Professors(pro_id),
+    constraint p_courses_fk2
+    foreign key  (course_id) references Courses(course_id)); 
+-------------------------------------------------------------------------
+

@@ -1,0 +1,44 @@
+;;; 
+Export: Release 11.2.0.2.0 - Production on Fri Feb 9 16:44:00 2024
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - Production
+Starting "UNIVERSITY"."SYS_EXPORT_SCHEMA_01":  UNIVERSITY/********@XE DUMPFILE=backup_20240209_164357.dmp DIRECTORY=back_up 
+Estimate in progress using BLOCKS method...
+Processing object type SCHEMA_EXPORT/TABLE/TABLE_DATA
+Total estimation using BLOCKS method: 448 KB
+Processing object type SCHEMA_EXPORT/USER
+Processing object type SCHEMA_EXPORT/SYSTEM_GRANT
+Processing object type SCHEMA_EXPORT/ROLE_GRANT
+Processing object type SCHEMA_EXPORT/DEFAULT_ROLE
+Processing object type SCHEMA_EXPORT/PRE_SCHEMA/PROCACT_SCHEMA
+Processing object type SCHEMA_EXPORT/SEQUENCE/SEQUENCE
+Processing object type SCHEMA_EXPORT/TABLE/TABLE
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/INDEX
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Processing object type SCHEMA_EXPORT/TABLE/COMMENT
+Processing object type SCHEMA_EXPORT/PACKAGE/PACKAGE_SPEC
+Processing object type SCHEMA_EXPORT/FUNCTION/FUNCTION
+Processing object type SCHEMA_EXPORT/PROCEDURE/PROCEDURE
+Processing object type SCHEMA_EXPORT/PACKAGE/COMPILE_PACKAGE/PACKAGE_SPEC/ALTER_PACKAGE_SPEC
+Processing object type SCHEMA_EXPORT/FUNCTION/ALTER_FUNCTION
+Processing object type SCHEMA_EXPORT/PROCEDURE/ALTER_PROCEDURE
+Processing object type SCHEMA_EXPORT/PACKAGE/PACKAGE_BODY
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/REF_CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/TRIGGER
+Processing object type SCHEMA_EXPORT/TABLE/STATISTICS/TABLE_STATISTICS
+. . exported "UNIVERSITY"."COURSES"                      7.960 KB      13 rows
+. . exported "UNIVERSITY"."DEPARTMENTS"                  5.984 KB       4 rows
+. . exported "UNIVERSITY"."DEPT_COURSES"                 5.632 KB      13 rows
+. . exported "UNIVERSITY"."ENROLLMENT"                   6.414 KB       5 rows
+. . exported "UNIVERSITY"."PROFESSORS"                   7.296 KB       5 rows
+. . exported "UNIVERSITY"."PROFESSOR_COURSES"            5.648 KB      13 rows
+. . exported "UNIVERSITY"."STUDENTS"                     8.671 KB      13 rows
+. . exported "UNIVERSITY"."ERROR_LOG"                        0 KB       0 rows
+Master table "UNIVERSITY"."SYS_EXPORT_SCHEMA_01" successfully loaded/unloaded
+******************************************************************************
+Dump file set for UNIVERSITY.SYS_EXPORT_SCHEMA_01 is:
+  C:\USERS\SOFTWARE\DESKTOP\CASESTUDY\BASH\BACKUP_20240209_164357.DMP
+Job "UNIVERSITY"."SYS_EXPORT_SCHEMA_01" successfully completed at 16:45:04
